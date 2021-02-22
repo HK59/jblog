@@ -3,7 +3,7 @@
 
 <mapper namespace="user">
 
-	<!-- id값으로 유저정보 1개 가져오기 : 중복체크 (selectById) / 블로그 정보 불러오기 -->
+	<!-- id값으로 user정보 1개 가져오기 : 중복체크 (selectById) / 블로그 정보 불러오기 -->
 	<select id="selectId" parameterType="String" resultType="com.javaex.vo.UserVo">
 		<![CDATA[
 			select  us.user_no,
