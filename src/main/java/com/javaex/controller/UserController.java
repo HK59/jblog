@@ -38,11 +38,11 @@ public class UserController {
 
 	// id중복체크
 	@ResponseBody
-	@RequestMapping(value = "/idChk", method = { RequestMethod.GET, RequestMethod.POST })
+	@RequestMapping(value = "/IdCheck", method = { RequestMethod.GET, RequestMethod.POST })
 	public String idChk(@RequestParam("id") String id) {
-		System.out.println("user.idChk");
+		System.out.println("user.IdCheck");
 
-		String result = userService.idChk(id);
+		String result = userService.IdCheck(id;
 
 		return result;
 	}

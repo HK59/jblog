@@ -31,8 +31,8 @@
 						<strong>카테고리</strong>
 					</div>
 					<ul id="cateList" class="text-left">
-						<c:forEach items="${blogMap.cateList }" var="cateVo">
-							<li><a href="${pageContext.request.contextPath }/${userVo.id}?cateNo=${cateVo.cateNo }">${cateVo.cateName }</a></li>
+						<c:forEach items="" var="cateVo">
+							<li><a href=""></a></li>
 						</c:forEach>
 						
 					</ul>
@@ -58,14 +58,14 @@
 					
 					<c:otherwise>
 						<div id="postBox" class="clearfix">
-							<div id="postTitle" class="text-left"><strong>${blogMap.postVo.postTitle }</strong></div>
-							<div id="postDate" class="text-left"><strong>${blogMap.postVo.regDate }</strong></div>
+							<div id="postTitle" class="text-left"><strong></strong></div>
+							<div id="postDate" class="text-left"><strong></strong></div>
 							<div id="postNick">${userVo.userName}(${userVo.id})님</div>
 						</div>
 						<!-- //postBox -->
 					
 						<div id="post" >
-							${blogMap.postVo.postContent }
+							
 						</div>
 						<!-- //post -->
 					</c:otherwise>
@@ -80,10 +80,10 @@
 							<col style="width: 20%;">
 						</colgroup>
 						
-						<c:forEach items="${blogMap.postList }" var="postVo">
+						<c:forEach items="" var="postVo">
 							<tr>
-								<td class="text-left"><a href="${pageContext.request.contextPath }/${userVo.id}?cateNo=${postVo.cateNo }&postNo=${postVo.postNo }">${postVo.postTitle }</a></td>
-								<td class="text-right">${postVo.regDate }</td>
+								<td class="text-left"><a href=""></a></td>
+								<td class="text-right"></td>
 							</tr>
 						</c:forEach>				
 						

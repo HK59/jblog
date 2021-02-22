@@ -15,8 +15,8 @@ public class UserService {
 
 	
 	//id 중복체크
-	public String idChk(String id) {
-		System.out.println("userservier.idChk()");
+	public String IdCheck(String id) {
+		System.out.println("userservier.IcCheck()");
 
 		String result;
 		
@@ -33,7 +33,7 @@ public class UserService {
 	
 	//회원가입 & 블로그 & 카테고리 초기값 입력
 	public int join(UserVo userVo) {
-		System.out.println("userservier.join()");
+		System.out.println("userservice.join()");
 		
 		//블로그 초기값 할당
 		userVo.setBlogtitle(userVo.getUsername()+ "의 블로그입니다.");
@@ -50,7 +50,7 @@ public class UserService {
 	
 	//로그인
 	public UserVo login(UserVo userVo) {
-		System.out.println("userservier.login()");
+		System.out.println("userservice.login()");
 		
 		return userDao.selectByIdNPw(userVo);
 		
